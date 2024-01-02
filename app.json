@@ -11,23 +11,47 @@
     "telegram-bot",
     "pyrogram"
     ],
-    "stack": "container",
     "env": {
+     "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
       "BOT_TOKEN": {
-        "description": "ممممم",
+        "description": "A Bot's token from Botfather",
         "value": "",
         "required": true
       },
-      "SESSION_NAME2": {
-        "description": "ممممم",
-        "value": "",
-        "required": false
-      },
-      "SESSION_NAME": {
-        "description": "ممممم",
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
         "value": "",
         "required": true
-      }
+      },
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "",
+        "required": true
+      },
+      "OWNER_NAME": {
+        "description": "The user name of user whom you would like to add as developer.",
+        "value": "",
+        "required": true
+      },
+      "CHANNEL": {
+        "description": "The user id of channel.",
+        "value": "",
+        "required": true
+      },
+      "GROUP": {
+        "description": "The user id of GROUP SUPPORT",
+        "value": "",
+        "required": true
+      }                  
     },
     "buildpacks": [
           {

@@ -1,5 +1,5 @@
 #!/bin/bash
-### zombie Music Bot Installer
+### ElNqYb Music Bot Installer
 
 pprint (){
 	cred='\033[0;31m'
@@ -72,6 +72,14 @@ node(){
 	pprint "SUCCESS!\n" "cgreen" || (pprint "FAIL.\n" "cred"; exit 1)
 }
 
+
+repo(){
+	# Get git repo if the installer is runned standalone
+	[[ ! "Maker" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
+	git clone https://github.com/01014797417/Maker &&  cd Maker
+}
+
+
 installation(){
 	pprint "\n\nUpgrading pip and installing dependency packages.. "
 	pip3 install -U pip &>>pypilog.txt &&
@@ -80,19 +88,34 @@ installation(){
 	pprint "FAIL.\n" "cred"
 	exit 1
 }
+
+clear
+pprint "Welcome to Yukki Music Bot Setup Installer\n\n"
+pprint "If you see any error during Installation Process, Please refer to these files for logs: "
+pprint "\nFor node js errors , Checkout nodelog.txt"
+pprint "\nFor pypi packages errors , Checkout pypilog.txt"
+sleep 2
+pprint "\n\nScript needs sudo privileges in order to update & install packages.\n"
 sudo test
 
 update
 packages
 node
+repo
 installation
+pprint "\n\n\n\n\n ElNqYb Music Bot Installation Completed!" "cgreen"
 sleep 4
+clear
+
+pprint "\nEnter Your Values Below\n\n\n"
+
+pprint "\n\nProcessing your vars, Wait a while!" "cgreen"
 
 if [ -f .env ]; then
 	rm .env
 fi
 
-echo """OWNER
-Sasa""" > .env
+echo """OWNER_ID
+Hi""" > .env
 clear
-pprint "\n\n\n\n\n zombie Bot Completed!" "cgreen"
+pprint "\n\n\n\n\n ElNqYb Music Bot Installation Completed!" "cgreen"

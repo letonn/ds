@@ -1,26 +1,21 @@
 from pyrogram import Client, idle
+from config import API_ID, API_HASH, BOT_TOKEN
 from pyromod import listen
 
 
 
 bot = Client(
     "mo",
-    api_id=21627756,
-    api_hash="fe77fbf0cae9f7f5ece37659e2466cf1",
-    bot_token="6420574235:AAEO42nR-NBTKXo5vrcu9Q_ptNAEU1hM2yQ",
-    plugins=dict(root="MZombie")
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN,
+    plugins=dict(root="Maker")
     )
 
-DEVS = ["UP_UO"]
-
-bot_id = bot.bot_token.split(":")[0]
-
-async def start_zombiebot():
-    print("تم تشغيل الصانع بنجاح..💗")
+async def start_bot():
+    print("[INFO]: STARTING BOT CLIENT")
     await bot.start()
-    for hh in DEVS:
-        try:
-            await bot.send_message(hh, "**تم تشغيل الصانع بنجاح ...🥀**")
-        except:
-            pass
+    zombie = "UP_UO"
+    await bot.send_message(zombie, "**تم تشغيل ال صانع عزيزي المطور ،**")
+    print("[INFO]: تم تشغيل الصانع وارسال رسالة للمطور💎.")
     await idle()
