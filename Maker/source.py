@@ -1,8 +1,6 @@
 from pyrogram import filters, Client
 from pyrogram import Client as app
 from config import API_ID, API_HASH, MONGO_DB_URL, appp, user as usr, helper as ass, call, OWNER, OWNER_NAME, CHANNEL, GROUP, VIDEO
-from source.info import Call, activecall, helper, active
-from source.Data import db, dev, devname, set_must, get_data
 from pyrogram.raw.types import InputPeerChannel
 from pyrogram.raw.functions.phone import CreateGroupCall
 from pytgcalls import PyTgCalls
