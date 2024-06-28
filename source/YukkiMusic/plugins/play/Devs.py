@@ -5,28 +5,28 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from YukkiMusic import app, Telegram
 import random
 @app.on_message(
-    command(["صورص","سورس","السورس","سورس زد إي", "ZE"])
+    command(["صورص","سورس","السورس","سورسي", "le"])
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/2b901e8bb301a9dd3416a.jpg",
+        photo=f"https://telegra.ph/file/75737308889fade2c982a.jpg",
         caption=f"""
- [𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱](https://t.me/UI_XB)
+ [𝐒𝐎𝐔𝐑𝐂𝐄 •𝐋𝐄𝐓𝐇𝐎𝐍𓅛](https://t.me/A1DIIU)
  —————————————
- [mody](https://t.me/UP_UO)
+ [mody](https://t.me/S_1_02)
  
- [𓏺𝙂𝙍𝙊𝙐𝙋 𝙃𝞝𝙇𝙋](https://t.me/UI_OS)
+ [𓏺𝙂𝙍𝙊𝙐𝙋 𝙃𝞝𝙇𝙋](https://t.me/H_8_o)
   
- [⍟𓏺𝙒𝞝𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱](https://t.me/UI_XB)
+ [⍟𓏺𝙒𝞝𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐋𝐄𝐓𝐇𝐎𝐍𓅛](https://t.me/A1DIIU)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "mody", url=f"https://t.me/UP_UO"), 
+                        "mody", url=f"https://t.me/S_1_02"), 
                 ],[
                     InlineKeyboardButton(
-                        "𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱", url=f"t.me/UI_XB"),
+                        "𝐒𝐎𝐔𝐑𝐂𝐄 •𝐋𝐄𝐓𝐇𝐎𝐍𓅛", url=f"t.me/A1DIIU"),
                 ],
 
             ]
