@@ -70,15 +70,15 @@ async def auto_bot():
         except:
            pass
         try:
-          await user.join_chat("Source_Ze")
+          await user.join_chat("A1DIIU")
         except:
           pass
         try:
-          await user.join_chat("ZeSupport")
+          await user.join_chat("ll0llld")
         except:
           pass
         try:
-          await user.join_chat("VISA_ZE")
+          await user.join_chat("L_Q7I")
         except:
           pass
       except Exception as e:
@@ -211,7 +211,7 @@ async def stratmaked(client, message):
     kep = ReplyKeyboardMarkup([
 ["حذف بوت", "صنع بوت"],
 ["حول السورس", "استخراج جلسه"]],resize_keyboard=True)
-    await message.reply_text(f"**👋🏻 ꒐ أهلاً بك {message.from_user.mention}  💎 .\n🤖 ꒐ في صانع ميوزك نونا  💎 .**", reply_markup=kep,quote=True)
+    await message.reply_text(f"**👋🏻 ꒐ أهلاً بك {message.from_user.mention}  💎 .\n🤖 ꒐ في صانع ميوزك ليثون  💎 .**", reply_markup=kep,quote=True)
     
 @app.on_message(
     filters.command(["/alive", "معلومات", "سورس", "السورس", "• السورس •"], "")
@@ -236,8 +236,8 @@ async def alive(client: Client, message):
     )
 
     alive = f"""╭──── • ◈ • ────╮
-么 [𝐬𝐨𝐮𝐫𝐜𝐞](t.me/Source_Ze) 💎 .
-么  [𝒅𝒆𝒗](t.me/ELHYBA) 💎 .
+么 [𝐬𝐨𝐮𝐫𝐜𝐞](t.me/L_Q7I) 💎 .
+么  [𝒅𝒆𝒗](t.me/S_1_02) 💎 .
 ╰──── • ◈ • ────╯
 🚦 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾?? 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼  💎 ."""
 
